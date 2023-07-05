@@ -46,9 +46,9 @@ def index(request):
             if 'Audio' in resolution:
                 audioStreams.append({
                     'resolution': resolution,
-                    'extension': item['ext'],
+                    'extension': 'mp3',
                     'file_size': file_size,
-                    'itemFormat': itemFormat,
+                    'itemFormat': '',
                     'url': item['url'],
                 })
             else:
